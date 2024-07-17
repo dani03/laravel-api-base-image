@@ -1,0 +1,24 @@
+version: 0.2
+        
+phases:
+  install:
+    on-failure: ABORT
+    runtime-versions:
+      php: 8.2
+    commands:
+      - echo "installed successfully" 
+  pre_build:
+    on-failure: ABORT
+    commands:
+      - echo "pre_build successfully"  
+  build:
+    on-failure: ABORT
+    commands:
+      - echo "build successfully" 
+  post_build:
+    on-failure: ABORT
+    commands:
+      - echo "post_build successfully" 
+
+    
+
